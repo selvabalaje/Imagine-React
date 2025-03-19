@@ -1,0 +1,41 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .social-icons {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .copyright {
+    margin-top: 10px;
+  }
+  
+  .heart {
+    color: red;
+    margin: 0 5px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
