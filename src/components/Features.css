@@ -99,20 +99,52 @@
   .feature-card:hover p {
     color: #333; 
   }
-
-
-@media (max-width: 1024px) {
-  .features-container {
-    flex-direction: row;
-    justify-content: space-around;
+  @media (max-width: 768px) {
+    .features {
+      padding: 60px 15px;
+    }
+  
+    .features h2 {
+      font-size: 30px;
+      text-align: center;
+      padding-right: 150px;
+    }
+  
+    .features p {
+      font-size: 16px;
+      margin-bottom: 60px;
+      padding: 0 10px;
+      padding-right: 150px;
+    }
+  
+    .features-container {
+      flex-direction: column;
+      align-items: center;
+      gap: 35px;
+      max-width: 95%;
+      margin: 0 auto;
+      padding-right: 150px;
+    }
+  
+    .feature-card {
+      width: 100%;
+      min-width: 320px;
+      padding: 20px 15px;
+    }
+  
+    .feature-card h3 {
+      font-size: 23px;
+    }
+  
+    .feature-card p {
+      font-size: 15px;
+      margin-bottom: 30px;
+      padding-right: 20px;
+  
+    }
+  
+    .icon {
+      font-size: 30px;
+      padding: 5px;
+    }
   }
-  .feature-card {
-    width: 45%; 
-  }
-}
-
-@media (max-width: 768px) {
-  .feature-card {
-    width: 100%; 
-  }
-}

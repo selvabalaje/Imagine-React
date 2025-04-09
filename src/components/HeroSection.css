@@ -1,30 +1,46 @@
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px;
-  max-width: 1800px;
-  margin: auto;
+/* Global box sizing and overflow fix */
+* {
+  box-sizing: border-box;
 }
 
-.hero-text {
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   width: 100%;
 }
 
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 30px 50px;
+  margin-top: 70px; /* Adjust based on navbar height */
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Text Content */
+.hero-text {
+  flex: 1;
+  min-width: 0;
+  max-width: 50%;
+  padding: 20px;
+}
+
 .hero-text h1 {
-  font-size: 55px;
+  font-size: 48px;
   font-weight: bold;
   color: #000;
-  margin-left: 150px;
-  margin-bottom: 20px;  
+  margin-bottom: 15px;
   font-family: "Poppins", sans-serif;
 }
 
 .hero-text p {
   font-size: 1rem;
   color: #555;
-  margin: 10px 0;
-  margin-left: 150px;
   margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
 }
@@ -32,12 +48,11 @@
 .btn {
   background-color: #007bff;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   border: none;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 5px;
-  margin-left: 150px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -45,8 +60,12 @@
   background-color: #0056b3;
 }
 
+/* Hero Image */
 .hero-image {
-  width: 100%;
+  flex: 1;
+  min-width: 0;
+  max-width: 50%;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
@@ -54,4 +73,54 @@
 .hero-image img {
   max-width: 100%;
   height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 120px 15px 40px;
+  }
+
+  .hero-text,
+  .hero-image {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    word-break: break-word;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+    padding: 0 15px;
+    max-width: 300px;      
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+  }
+
+  .hero-image img {
+    width: 70%;        
+  height: auto;
+  object-fit: contain;
+  }
 }

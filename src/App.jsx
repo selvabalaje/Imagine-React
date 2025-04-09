@@ -9,9 +9,10 @@ import Testimonials from "./components/Testimonials";
 import BlogPosts from "./components/BlogPosts";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
+
 const App = () => {
   return (
-    <div>
+    <div className="App container-fluid px-0">
       <Navbar/>
       <Hero/>
       <Features/>

@@ -1,39 +1,45 @@
 .about-section {
   text-align: center;
-  padding: 80px 10%;
+  padding: 60px 20px;
   background-color: #f8f9fa;
 }
 
 .about-title {
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .about-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
   max-width: 1200px;
-  margin: 20 auto;
-  gap: 0px;
+  margin: auto;
 }
 
 .about-image {
-  flex: 3.0;
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-image img {
-  width: 300%;
-  max-width: 600px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
 }
 
 .about-content {
-  flex: 1;
+  flex: 1 1 300px;
   background: #f0f0f0;
-  padding: 40px;
+  padding: 30px;
   border-radius: 10px;
   text-align: left;
+  max-width: 600px;
 }
 
 .about-content h3 {
@@ -45,13 +51,13 @@
 .about-content p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: #555;
   margin-bottom: 20px;
 }
 
 .about-content ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
 
 .about-content ul li {
@@ -61,7 +67,6 @@
 }
 
 .learn-more-btn {
-  display: inline-block;
   background: #007bff;
   color: white;
   padding: 12px 24px;
@@ -70,9 +75,59 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  margin-top: 20px;
 }
 
 .learn-more-btn:hover {
   background: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+  }
+
+  .about-content {
+    text-align: center;
+    padding-right: 130px;
+  }
+
+  .about-content ul {
+    text-align: left;
+    margin: auto;
+    max-width: 300px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 2rem;
+    padding-right: 130px;
+  }
+
+  .about-content {
+    padding: 20px;
+    padding-right: 130px;
+  }
+
+  .about-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p,
+  .about-content ul li {
+    font-size: 0.95rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+
+  .about-image img {
+    max-width: 90%;
+    padding-right: 110px;
+  }
 }

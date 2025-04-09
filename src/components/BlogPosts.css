@@ -13,7 +13,7 @@
   .blog-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 60px;
     flex-wrap: wrap;
   }
   
@@ -21,9 +21,10 @@
     width: 300px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: left;
+    gap: 100px;
   }
   
   .blog-image {
@@ -58,5 +59,22 @@
     text-decoration: none;
     color: blue;
     font-weight: bold;
+  }
+  @media (max-width: 768px) {
+    .blog-container {
+      flex-direction: column;
+      align-items: center;
+      padding-right: 130px;
+    }
+  
+    .blog-card {
+      width: 90%;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      padding-right: 130px;
+    }
   }
   

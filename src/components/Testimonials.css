@@ -52,3 +52,41 @@
 .dot.active {
   background-color: #007bff;
 }
+@media (max-width: 600px) {
+  .testimonials-title {
+    font-size: 24px;
+    padding-right: 130px;
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    padding-right: 130px;
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 140px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+  }
+  .testimonial-name {
+    font-weight: bold;
+    padding-right: 130px;
+
+  }
+  .testimonial-dots {
+    margin-top: 20px;
+    padding-right: 130px;
+
+  }
+
+  .dot {
+    height: 8px;
+    width: 10px;
+    margin: 0 5px;
+  }
+}
